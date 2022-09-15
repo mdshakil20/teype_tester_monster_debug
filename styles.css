@@ -202,6 +202,68 @@ button {
   position: fixed;
   top: 1px;
 }
+.grid-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+
+}
+
+.m-15{
+  margin: 15px 0 15px 0;
+}
+
+.grid-item {
+  background-color: #171717;
+  border: 3px solid #9dffad;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px
+}
+
+.blg_header {
+  text-align: center;
+}
+
+.blog_header {
+  text-align: center;
+  border: 3px solid #9dffad;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 10px 40px;
+  margin: 20px auto;
+  color: white;
+
+}
+
+.blog_items {
+  width: 75%;
+  margin: 10px auto 50px auto;
+  color: white; 
+}
+
+.blog_item {
+  background-color: #171717;
+  padding: 15px;
+  margin-bottom: 50px;
+  border-left: 5px solid #9dffad;
+}
+
+.blog_item h4 {
+  margin-top: 25px;
+}
+
+.blog_item h2,
+h4 {
+  color: #9dffad;
+}
+
+.blog_item p {
+  text-align: justify;
+}
 
 @media only screen and (max-width: 767px) {
   .box-container {
