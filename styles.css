@@ -148,10 +148,12 @@ button {
 }
 
 .card {
-  width: 100%;
+  width: 30%;
+  margin-left:1.5%;
+  margin-right:1.5%;
   height: 100%;
   padding: 50px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -167,6 +169,18 @@ button {
   margin-bottom: 30px;
 }
 
+.card h3{
+  color: #9dffad;
+}
+
+.card h3,p{
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
 #modal-background {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -181,12 +195,12 @@ button {
   top: 1px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
   }
   .card {
-    flex-direction: column;
+    width: 100%;
   }
 }
