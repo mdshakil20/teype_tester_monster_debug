@@ -10,6 +10,7 @@ body {
   background-position: left top;
   font-family: "Zilla Slab", serif;
 }
+body { height: 100vh; }
 
 .box-container {
   width: 70%;
