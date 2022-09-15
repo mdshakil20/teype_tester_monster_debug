@@ -81,6 +81,13 @@ body { height: 100vh; }
   color: white;
   margin: 10px 0;
 }
+.clear_history_btn_container{
+  display: flex;
+}
+
+#clearHistory{
+  margin:0 auto 20px auto;
+}
 
 .green {
   color: #9dffad;
