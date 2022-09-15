@@ -105,10 +105,12 @@ const start = () => {
   if (startTime) return;
 
 
-  countdownOverlay.style.display = "flex";
   let count = 3;
+  countdownOverlay.style.display = "flex";
+
   const startCountdown = setInterval(() => {
     //countDown field position
+    console.log(count);
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer

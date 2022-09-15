@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Tester Monster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        .grid-container {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 10px;
+
+        }
+
+        .grid-item {
+            background-color: #171717;
+            border: 3px solid #9dffad;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            margin: 20px
+        }
+
+        .blg_header {
+            text-align: center;
+        }
+
+        .blog_header {
+            text-align: center;
+            border: 3px solid #9dffad;
+            border-radius: 15px;
+            display: inline-block;
+            padding: 10px 40px;
+            margin: 20px auto;
+            color: white;
+
+        }
+
+        .blog_items {
+            width: 75%;
+            margin: 10px auto 50px auto;
+            color: white; 
+        }
+
+        .blog_item {
+            background-color: #171717;
+            padding: 15px;
+            margin-bottom: 50px;
+            border-left: 5px solid #9dffad;
+        }
+
+        .blog_item h4 {
+            margin-top: 25px;
+        }
+
+        .blog_item h2,
+        h4 {
+            color: #9dffad;
+        }
+
+        .blog_item p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blg_header">
+        <h1 class="blog_header">Blogs</h1>
+    </div>
+    <div class="blog_items">
+        <div class="blog_item">
+            <h2>Q1. What are the difference between sessionStorage and localStorage ?</h2>
+            <h4>Answer:</h4>
+            <p>
+                The difference between sessionStorage and localStorage is that localStorage data does not expire,
+                whereas sessionStorage data is cleared when the page session ends. A unique page session gets created
+                once a document is loaded in a browser tab. Page sessions are valid for only one tab at a time.while
+                data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.
+                Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and
+                assigned to that particular tab.
+            </p>
+        </div>
+        <div class="blog_item">
+            <h2>Q2. What is the difference between local and global scope in JavaScript?</h2>
+            <h4>Answer:</h4>
+            <p>
+                <b>Scope:</b> in general is about the creation of an *execution context* on that single thread (a
+                sandbox of
+                sorts), inside which code runs. These contexts (scopes) can be nested. <br><br>
+
+                <b>Global scope:</b> is sort of like the html equivalent for JS. It’s the “root scope” which encloses
+                all
+                other code / scopes.<br>
+
+                Depending on what JS runtime you use, there may be some differences when global scope is initialized
+                e.g. In the browser it creates a “window” object + relative pointer (this), in nodeJS the object is
+                called “global” instead, etc.<br><br>
+
+                <b>Local scopes:</b> are nested execution contexts (sandboxes) within the global scope i.e. blocks of
+                code
+                logically grouped by the parser.
+
+
+            </p>
+        </div>
+        <div class="blog_item">
+            <h2>Q3. what is event loop in JavaScript?</h2>
+            <h4>Answer:</h4>
+            <p>
+                The event loop is the secret behind JavaScript’s asynchronous programming. JS executes all operations on
+                a single thread, but using a few smart data structures, it gives us the illusion of multi-threading.
+                Let’s take a look at what happens on the back-end. <br><br>
+                The call stack is responsible for keeping track of all the operations in line to be executed. Whenever a
+                function is finished, it is popped from the stack.<br><br>
+                The event queue is responsible for sending new functions to the stack for processing. It follows the
+                queue data structure to maintain the correct sequence in which all operations should be sent for
+                execution.
+            </p>
+        </div>
+        <div class="blog_item">
+            <h2>Q4. How I can get 'undefined' in JavaScript?</h2>
+            <h4>Answer:</h4>
+            <p>
+                1. If you want to use a variable without initializing it. <br>
+                2. When you call a non-exiting property of an object. <br>
+                3. Function that does not return a value but you used for returing value. <br>
+                4. If you pass number of argument less than parameter in a function. <br>
+                5. If you call a variable outside the scope. <br>
+
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
